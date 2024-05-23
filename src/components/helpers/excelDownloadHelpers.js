@@ -1,5 +1,4 @@
 import XLSX from 'sheetjs-style';
-// import * as FileSaver from 'file-saver';
 
 export const exportToExcel = (fileData, fileName) => {
       
