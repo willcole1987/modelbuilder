@@ -1,0 +1,887 @@
+{
+  "Nodes": [
+    {
+      "Id": 1,
+      "Level": 1,
+      "Name": "SAM",
+      "id": "b8ad"
+    },
+    {
+      "Id": 2,
+      "Level": 2,
+      "Name": "Fundamental Equity",
+      "id": "3eae"
+    },
+    {
+      "Id": 3,
+      "Level": 3,
+      "Name": "Investment professionals",
+      "id": "d464"
+    },
+    {
+      "Id": 4,
+      "Level": 3,
+      "Name": "Approach, performance and risk",
+      "id": "8aa3"
+    },
+    {
+      "Id": 5,
+      "Level": 3,
+      "Name": "Opportunity set",
+      "id": "9e37"
+    },
+    {
+      "Id": 6,
+      "Level": 3,
+      "Name": "Alignment",
+      "id": "6903"
+    },
+    {
+      "Id": 7,
+      "Level": 3,
+      "Name": "[DO NOT USE] Stability",
+      "id": "ace4"
+    },
+    {
+      "Id": 8,
+      "Level": 4,
+      "Name": "Team size",
+      "id": "009d"
+    },
+    {
+      "Id": 9,
+      "Level": 4,
+      "Name": "Tenure at firm",
+      "id": "6b54"
+    },
+    {
+      "Id": 11,
+      "Level": 4,
+      "Name": "Team diversity indicators",
+      "id": "62b7"
+    },
+    {
+      "Id": 12,
+      "Level": 4,
+      "Name": "Industry experience",
+      "id": "78af"
+    },
+    {
+      "Id": 13,
+      "Level": 4,
+      "Name": "Tenure of approach",
+      "id": "25db"
+    },
+    {
+      "Id": 14,
+      "Level": 4,
+      "Name": "Portfolio conviction",
+      "id": "88dd"
+    },
+    {
+      "Id": 17,
+      "Level": 4,
+      "Name": "Sustainable investment",
+      "id": "a6fa"
+    },
+    {
+      "Id": 18,
+      "Level": 4,
+      "Name": "Assets to invest",
+      "id": "6de4"
+    },
+    {
+      "Id": 19,
+      "Level": 4,
+      "Name": "Universe opportunity",
+      "id": "c861"
+    },
+    {
+      "Id": 20,
+      "Level": 4,
+      "Name": "Position liquidity",
+      "id": "f47b"
+    },
+    {
+      "Id": 21,
+      "Level": 4,
+      "Name": "Capacity target",
+      "id": "b473"
+    },
+    {
+      "Id": 22,
+      "Level": 4,
+      "Name": "Fees",
+      "id": "14fd"
+    },
+    {
+      "Id": 23,
+      "Level": 4,
+      "Name": "Coinvestment",
+      "id": "96cf"
+    },
+    {
+      "Id": 24,
+      "Level": 4,
+      "Name": "Ownership and remuneration",
+      "id": "7c32"
+    },
+    {
+      "Id": 25,
+      "Level": 4,
+      "Name": "Organizational stability",
+      "id": "59f4"
+    },
+    {
+      "Id": 27,
+      "Level": 4,
+      "Name": "Product critical mass and flows",
+      "id": "34e5"
+    },
+    {
+      "Id": 28,
+      "Level": 4,
+      "Name": "Product team stability",
+      "id": "793e"
+    },
+    {
+      "Id": 29,
+      "Level": 5,
+      "Name": "Team size vs number of products supported",
+      "id": "bc56"
+    },
+    {
+      "Id": 30,
+      "Level": 5,
+      "Name": "Team size vs portfolio activity",
+      "id": "0188"
+    },
+    {
+      "Id": 31,
+      "Level": 5,
+      "Name": "Tenure of team (ex KDM) at firm",
+      "id": "0e57"
+    },
+    {
+      "Id": 32,
+      "Level": 5,
+      "Name": "Tenure of KDM at firm",
+      "id": "3224"
+    },
+    {
+      "Id": 34,
+      "Level": 5,
+      "Name": "Gender diversity",
+      "id": "8190"
+    },
+    {
+      "Id": 35,
+      "Level": 5,
+      "Name": "Ethnic diversity",
+      "id": "a288"
+    },
+    {
+      "Id": 36,
+      "Level": 5,
+      "Name": "Industry experience diversity",
+      "id": "3f9d"
+    },
+    {
+      "Id": 37,
+      "Level": 5,
+      "Name": "Team (ex KDM) average industry experience",
+      "id": "c98d"
+    },
+    {
+      "Id": 38,
+      "Level": 5,
+      "Name": "KDM average industry experience",
+      "id": "d719"
+    },
+    {
+      "Id": 39,
+      "Level": 5,
+      "Name": "Years since product inception",
+      "id": "7827"
+    },
+    {
+      "Id": 40,
+      "Level": 5,
+      "Name": "Typical active share",
+      "id": "a37f"
+    },
+    {
+      "Id": 41,
+      "Level": 5,
+      "Name": "Typical top 20 stock concentration",
+      "id": "bc45"
+    },
+    {
+      "Id": 42,
+      "Level": 5,
+      "Name": "ESG integration",
+      "id": "22f1"
+    },
+    {
+      "Id": 43,
+      "Level": 5,
+      "Name": "Voting",
+      "id": "f3d6"
+    },
+    {
+      "Id": 44,
+      "Level": 5,
+      "Name": "Engagement",
+      "id": "554c"
+    },
+    {
+      "Id": 45,
+      "Name": "Average assets to invest vs median com",
+      "id": "735d"
+    }
+  ],
+  "moderepresentationjson": [
+    {
+      "id": "17",
+      "Level": 1,
+      "Name": "Equity Fundamental 2",
+      "NodeId": 297,
+      "NodeStructureId": 1535,
+      "ParentId": 1
+    },
+    {
+      "id": "17",
+      "Level": 2,
+      "Name": "Investment professionals",
+      "NodeId": 3,
+      "NodeStructureId": 1536,
+      "ParentId": 1535
+    },
+    {
+      "id": "17",
+      "Level": 3,
+      "Name": "Tenure at firm",
+      "NodeId": 9,
+      "NodeStructureId": 1558,
+      "ParentId": 1536
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Tenure of team (ex KDM) at firm",
+      "NodeId": 31,
+      "NodeStructureId": 1578,
+      "ParentId": 1558
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Tenure of KDM at firm",
+      "NodeId": 32,
+      "NodeStructureId": 1579,
+      "ParentId": 1558
+    },
+    {
+      "id": "17",
+      "Level": 3,
+      "Name": "Industry experience",
+      "NodeId": 12,
+      "NodeStructureId": 1559,
+      "ParentId": 1536
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Team (ex KDM) average industry experience",
+      "NodeId": 37,
+      "NodeStructureId": 1576,
+      "ParentId": 1559
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "KDM average industry experience",
+      "NodeId": 38,
+      "NodeStructureId": 1577,
+      "ParentId": 1559
+    },
+    {
+      "id": "17",
+      "Level": 3,
+      "Name": "Team size",
+      "NodeId": 8,
+      "NodeStructureId": 1560,
+      "ParentId": 1536
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Team size vs number of products supported",
+      "NodeId": 29,
+      "NodeStructureId": 1574,
+      "ParentId": 1560
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Team size vs portfolio activity",
+      "NodeId": 30,
+      "NodeStructureId": 1575,
+      "ParentId": 1560
+    },
+    {
+      "id": "17",
+      "Level": 3,
+      "Name": "Team diversity indicators",
+      "NodeId": 11,
+      "NodeStructureId": 1561,
+      "ParentId": 1536
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Gender diversity",
+      "NodeId": 34,
+      "NodeStructureId": 1570,
+      "ParentId": 1561
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Language diversity",
+      "NodeId": 94,
+      "NodeStructureId": 1571,
+      "ParentId": 1561
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Ethnic diversity",
+      "NodeId": 35,
+      "NodeStructureId": 1572,
+      "ParentId": 1561
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Industry experience diversity",
+      "NodeId": 36,
+      "NodeStructureId": 1573,
+      "ParentId": 1561
+    },
+    {
+      "id": "17",
+      "Level": 2,
+      "Name": "Approach, performance and risk",
+      "NodeId": 4,
+      "NodeStructureId": 1537,
+      "ParentId": 1535
+    },
+    {
+      "id": "17",
+      "Level": 3,
+      "Name": "Risk profile",
+      "NodeId": 87,
+      "NodeStructureId": 1552,
+      "ParentId": 1537
+    },
+    {
+      "id": "17",
+      "Level": 4,
+      "Name": "Since inception risk adjusted returns",
+      "NodeId": 90,
+      "NodeStructureId": 1590,
+      "ParentId": 1552
+    },
+    {
+      "id": "18",
+      "Level": 1,
+      "Name": "Traditional Credit 2",
+      "NodeId": 302,
+      "NodeStructureId": 1634,
+      "ParentId": 1
+    },
+    {
+      "id": "18",
+      "Level": 2,
+      "Name": "Investment professionals",
+      "NodeId": 3,
+      "NodeStructureId": 1635,
+      "ParentId": 1634
+    },
+    {
+      "id": "18",
+      "Level": 3,
+      "Name": "Tenure at firm",
+      "NodeId": 9,
+      "NodeStructureId": 1655,
+      "ParentId": 1635
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Tenure of team (ex KDM) at firm",
+      "NodeId": 31,
+      "NodeStructureId": 1674,
+      "ParentId": 1655
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Tenure of KDM at firm",
+      "NodeId": 32,
+      "NodeStructureId": 1675,
+      "ParentId": 1655
+    },
+    {
+      "id": "18",
+      "Level": 3,
+      "Name": "Industry experience",
+      "NodeId": 12,
+      "NodeStructureId": 1656,
+      "ParentId": 1635
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Team (ex KDM) average industry experience",
+      "NodeId": 37,
+      "NodeStructureId": 1672,
+      "ParentId": 1656
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "KDM average industry experience",
+      "NodeId": 38,
+      "NodeStructureId": 1673,
+      "ParentId": 1656
+    },
+    {
+      "id": "18",
+      "Level": 3,
+      "Name": "Breadth of resources",
+      "NodeId": 118,
+      "NodeStructureId": 1657,
+      "ParentId": 1635
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Companies covered per credit analyst",
+      "NodeId": 104,
+      "NodeStructureId": 1669,
+      "ParentId": 1657
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Number of dedicated economists/sovereign researchers",
+      "NodeId": 105,
+      "NodeStructureId": 1670,
+      "ParentId": 1657
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Number of securitised analysts",
+      "NodeId": 106,
+      "NodeStructureId": 1671,
+      "ParentId": 1657
+    },
+    {
+      "id": "18",
+      "Level": 3,
+      "Name": "Team diversity indicators",
+      "NodeId": 11,
+      "NodeStructureId": 1658,
+      "ParentId": 1635
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Gender diversity",
+      "NodeId": 34,
+      "NodeStructureId": 1665,
+      "ParentId": 1658
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Language diversity",
+      "NodeId": 94,
+      "NodeStructureId": 1666,
+      "ParentId": 1658
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Ethnic diversity",
+      "NodeId": 35,
+      "NodeStructureId": 1667,
+      "ParentId": 1658
+    },
+    {
+      "id": "18",
+      "Level": 4,
+      "Name": "Industry experience diversity",
+      "NodeId": 36,
+      "NodeStructureId": 1668,
+      "ParentId": 1658
+    },
+    {
+      "id": "18",
+      "Level": 2,
+      "Name": "Approach, performance and risk",
+      "NodeId": 4,
+      "NodeStructureId": 1636,
+      "ParentId": 1634
+    },
+    {
+      "id": "18",
+      "Level": 3,
+      "Name": "Performance",
+      "NodeId": 86,
+      "NodeStructureId": 1649,
+      "ParentId": 1636
+    },
+    {
+      "id": "21",
+      "Level": 1,
+      "Name": "Multi-asset 2",
+      "NodeId": 305,
+      "NodeStructureId": 1883,
+      "ParentId": 1
+    },
+    {
+      "id": "21",
+      "Level": 2,
+      "Name": "Investment professionals",
+      "NodeId": 3,
+      "NodeStructureId": 1884,
+      "ParentId": 1883
+    },
+    {
+      "id": "21",
+      "Level": 3,
+      "Name": "Tenure at firm",
+      "NodeId": 9,
+      "NodeStructureId": 1905,
+      "ParentId": 1884
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Tenure of team (ex KDM) at firm",
+      "NodeId": 31,
+      "NodeStructureId": 1919,
+      "ParentId": 1905
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Tenure of KDM at firm",
+      "NodeId": 32,
+      "NodeStructureId": 1920,
+      "ParentId": 1905
+    },
+    {
+      "id": "21",
+      "Level": 3,
+      "Name": "Industry experience",
+      "NodeId": 12,
+      "NodeStructureId": 1906,
+      "ParentId": 1884
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Team (ex KDM) average industry experience",
+      "NodeId": 37,
+      "NodeStructureId": 1917,
+      "ParentId": 1906
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "KDM average industry experience",
+      "NodeId": 38,
+      "NodeStructureId": 1918,
+      "ParentId": 1906
+    },
+    {
+      "id": "21",
+      "Level": 3,
+      "Name": "Team size",
+      "NodeId": 8,
+      "NodeStructureId": 1907,
+      "ParentId": 1884
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Team size vs number of products supported",
+      "NodeId": 29,
+      "NodeStructureId": 1915,
+      "ParentId": 1907
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Team size vs portfolio activity",
+      "NodeId": 30,
+      "NodeStructureId": 1916,
+      "ParentId": 1907
+    },
+    {
+      "id": "21",
+      "Level": 3,
+      "Name": "Team diversity indicators",
+      "NodeId": 11,
+      "NodeStructureId": 1908,
+      "ParentId": 1884
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Gender diversity",
+      "NodeId": 34,
+      "NodeStructureId": 1911,
+      "ParentId": 1908
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Language diversity",
+      "NodeId": 94,
+      "NodeStructureId": 1912,
+      "ParentId": 1908
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Ethnic diversity",
+      "NodeId": 35,
+      "NodeStructureId": 1913,
+      "ParentId": 1908
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Skill diversity",
+      "NodeId": 127,
+      "NodeStructureId": 1914,
+      "ParentId": 1908
+    },
+    {
+      "id": "21",
+      "Level": 2,
+      "Name": "Approach, performance and risk",
+      "NodeId": 4,
+      "NodeStructureId": 1885,
+      "ParentId": 1883
+    },
+    {
+      "id": "21",
+      "Level": 3,
+      "Name": "Performance",
+      "NodeId": 86,
+      "NodeStructureId": 1900,
+      "ParentId": 1885
+    },
+    {
+      "id": "21",
+      "Level": 4,
+      "Name": "Half-life weighted performance vs WTW default comparator",
+      "NodeId": 128,
+      "NodeStructureId": 1927,
+      "ParentId": 1900
+    }
+  ],
+  "models": [
+    {
+      "Category": "SnapshotModels",
+      "Id": 1,
+      "Name": "Equity Fundamental",
+      "id": "3bfb"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 2,
+      "Name": "Traditional Credit",
+      "id": "85cd"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 3,
+      "Name": "Multi Asset",
+      "id": "a9f7"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 4,
+      "Name": "Fund of hedge funds",
+      "id": "e2b4"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 6,
+      "Name": "Quant Equity",
+      "id": "9875"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 8,
+      "Name": "Cash",
+      "id": "ebab"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 9,
+      "Name": "Long/Short equity",
+      "id": "9dc6"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 10,
+      "Name": "Alt Credit",
+      "id": "88dd"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 11,
+      "Name": "Open-ended direct real estate",
+      "id": "2ec3"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 12,
+      "Name": "Mainstream fund of funds",
+      "id": "ee82"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 13,
+      "Name": "Multi-Asset Fund of Funds",
+      "id": "d7e8"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 14,
+      "Name": "Structured Credit",
+      "id": "3ac2"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 15,
+      "Name": "Absolute return bond",
+      "id": "a503"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 16,
+      "Name": "Buy and Maintain",
+      "id": "c044"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 17,
+      "Name": "Equity Fundamental 2",
+      "id": "8d4e"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 18,
+      "Name": "Traditional Credit 2",
+      "id": "8601"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 21,
+      "Name": "Multi-asset 2",
+      "id": "6ac3"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 22,
+      "Name": "Fund of hedge funds 2",
+      "id": "96ba"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 23,
+      "Name": "Quant Equity 2",
+      "id": "f2b4"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 24,
+      "Name": "Cash 2",
+      "id": "fe41"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 25,
+      "Name": "Alt Credit 2",
+      "id": "3717"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 26,
+      "Name": "Stable Value",
+      "id": "a9aa"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 27,
+      "Name": "Indexation - Equity",
+      "id": "1978"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 29,
+      "Name": "Public ODD",
+      "id": "376e"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 31,
+      "Name": "Cash 3",
+      "id": "75c1"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 33,
+      "Name": "Indexation - Fixed Income",
+      "id": "4f43"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 34,
+      "Name": "RA Sustainable Investment",
+      "id": "f79f"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 35,
+      "Name": "Equity Sustainable Investment",
+      "id": "4931"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 36,
+      "Name": "Credit Sustainable Investment",
+      "id": "b369"
+    },
+    {
+      "Category": "SnapshotModels",
+      "Id": 37,
+      "Name": "Listed Real Assets",
+      "id": "5aba"
+    },
+    {
+      "id": "69d8",
+      "token": "null"
+    }
+  ]
+}
