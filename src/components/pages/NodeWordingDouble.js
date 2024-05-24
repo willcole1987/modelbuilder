@@ -1,10 +1,13 @@
 import {Row, Col, Container, Table,ButtonGroup, Button, Modal} from "react-bootstrap"
 import GridWordingSelectorModal from "../widgets/GridWordingSelectorModal";
 import {createGridObject, specialGridEdit, copyForExcel} from '../helpers/helpers';
+import { useModel } from "../../contexts/ModelProvider"
 import {useEffect, useState } from "react";
 import GridTable from "../widgets/GridTable";
 
 export const NodeWordingDouble = () => {
+
+     const modelLogic = useModel();
 
      const [selectedSignal,     setSelectedSignal] = useState({});
      const [selectedChildNode1, setSelectedChildNode1] = useState({});
@@ -73,6 +76,7 @@ export const NodeWordingDouble = () => {
                     <Row>
                          <div className="page">
                               <h2>Grid Wording</h2>
+                              <h5>Model: {modelLogic.model["ModelName"]}</h5>
                          </div>
                     </Row>
                     <Row>

@@ -46,7 +46,7 @@ const InputScrollBox = ({importedModel,  setImportModel}) =>
        setModelJsonSummary(modelJsonSummaryArg)
        const initialModelsFromCategory = modelJsonSummaryArg.filter(x => x["Category"] === "SnapshotModels")
        setFiltered(initialModelsFromCategory);
-     }
+    }
     
     useEffect(() => {const url = 'http://localhost:4000/';
                      const requestHeader = {headers: {'Content-Type': 'application/json',},};

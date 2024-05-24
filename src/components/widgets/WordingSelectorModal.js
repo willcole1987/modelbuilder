@@ -10,10 +10,13 @@ const WordingSelectorModal = ({name, defaultColors,  defaultCalculatedValues, in
   const [tableCategories, setTableCategories] = useState(defaultColors);
 
   const [label, setLabel] = useState(initialLabel);
+  const [checkedOne, setCheckedOne] = useState(true);
+  const [checkedTwo, setCheckedTwo] = useState(false);
+  const handleCheckedOne = () => {setTableCategories(modalColors); setCheckedOne(true); setCheckedTwo(false); }
+  const handleCheckedTwo = () => {setTableCategories(modalCalculatedValues); setCheckedOne(false); setCheckedTwo(true);}
+
   const handleLabelUpdate  = (labelText) => { setLabel(labelText);
-    (labelText === "Color")?
-    setTableCategories(modalColors): 
-    setTableCategories(modalCalculatedValues);
+    (labelText === "Color")? handleCheckedOne(): handleCheckedTwo();
   }
 
   const handleModalColorsChange = (categoriesText) => {setTableCategories(categoriesText)}
@@ -25,7 +28,12 @@ const WordingSelectorModal = ({name, defaultColors,  defaultCalculatedValues, in
         </Modal.Header>
         
         <Modal.Body>
-            <DoubleOptionCheckbox SelectOption1="Color" SelectOption2="CalculatedValue" handleSelectionChange={handleLabelUpdate}/>
+            <DoubleOptionCheckbox SelectOption1="Color" 
+                                  SelectOption2="CalculatedValue" 
+                                  handleSelectionChange={handleLabelUpdate}
+                                  checkedOne={checkedOne}
+                                  checkedTwo={checkedTwo}
+                                />
             <input value={tableCategories} type="text" onChange={(e) => {handleModalColorsChange(e.target.value)}}/>
         </Modal.Body>
         <Button onClick={() => {

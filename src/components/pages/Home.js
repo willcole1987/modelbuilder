@@ -3,20 +3,20 @@ import InputScrollBox from  '../widgets/InputScrollBox';
 import BootstrapTreeGrid from '../widgets/BootstrapTreeGrid';
 import { AuthData } from "../../contexts/AuthWrapper";
 import { useModel } from "../../contexts/ModelProvider"
+import { useNode } from "../../contexts/NodeProvider"
 import {exportToExcel} from '../helpers/excelDownloadHelpers';
 import InformationSidePanel from '../widgets/InformationSidePanel';
 import Sticky from 'react-stickynode';
-import { useState } from 'react';
 import axios from 'axios';
-import Box from '../widgets/Box';
+// import Box from '../widgets/Box';
 
 export const Home = () => {
+
   const { user } = AuthData();
   const modelLogic = useModel();
-  
-  const [nodeInformation, setNodeInformation] = useState();
+  const nodeLogic = useNode();
 
-  function getModelTreeRepresentation () {
+  const getModelTreeRepresentation = () => {
       const url = 'http://localhost:4000/';
       const requestHeader = {headers: {'Content-Type': 'application/json',},};
       const requestBody = '{"UserToken":' + (user.token === "" ? "null" :  '"' + user.token + '"') + ', "ModelId":"' + modelLogic.model["ModelId"] + '","ModelCategory":"' + modelLogic.model["Category"] + '"}'
@@ -26,19 +26,40 @@ export const Home = () => {
       fetchData();
    }
 
-   const getNodeInformation = (modelid, nodeid) => {
-      const url = 'http://localhost:4000/';
-      const requestHeader = {headers: {'Content-Type': 'application/json',},};
-      const requestBody = '{"ModelId":' + {modelid} + '", "NodeId":"' + {nodeid} + '"}';
-      const fetchData = () => { axios.post(`${url}modelnodeinformation`, requestBody, requestHeader)
-                                    .then(res => setNodeInformation(res.data)) // 
-                              }
-      fetchData();
-   }
+  // TODO: the api calls to be placed in their respective contexts rather than in the 'Home' component
+  const getNodeInformation = (NodeStructureId, NodeId) => {
+      const ModelId = modelLogic.model["ModelId"];
+      if (NodeStructureId < 1)
+      { 
+          nodeLogic.setPersistedSessionNodeModelTreeData();
+          nodeLogic.setPersistedSessionNodeAttributeData(); 
+      } 
+      else
+      {
+          var selectedNode = modelLogic.model["ModelRepresentation"].ModelTree.filter(i => (i.Id === NodeStructureId && i.NodeId === NodeId))[0];
+          nodeLogic.setPersistedSessionNodeModelTreeData(selectedNode);
+          const url = 'http://localhost:4000/';
+          const requestHeader = {headers: {'Content-Type': 'application/json',},};
+          const requestBody = '{"ModelId":"' + ModelId + '", "NodeId":"' + NodeId + '"}';
+          const fetchData = () => { axios.post(`${url}modelnodeinformation`, requestBody, requestHeader)
+                                        .then(res => 
+                                              nodeLogic.setAllPersistedSessionNodeAttributeData(selectedNode, res.data))
+                                  }
+          fetchData();
+      }
+    }
 
-   const defaultDataExample = [{"Name":"Joe","Likes":"chocolate",},{"Name":"Jane","Likes":"studying",}];
     const exportModelToExcel = () => {
-      exportToExcel(defaultDataExample,"likes");
+      if(modelLogic.model["ModelRepresentation"].ModelTree === null || modelLogic.model["ModelName"]  === "default")
+        return 0;
+      var modelTree = modelLogic.model["ModelRepresentation"].ModelTree;
+      const getParentName = (node) => {
+            var parent =  modelTree.filter(i => i.Id === node.ParentId)[0];
+             return (parent !== undefined ? parent.Name : "SAM");
+        }
+      const ExcelData = modelTree.map(i => ({...i,"ParentNode":getParentName(i)}))
+
+      exportToExcel(ExcelData, modelLogic.model["ModelName"]);
    }
 
     return (
@@ -46,7 +67,8 @@ export const Home = () => {
               <Container fluid>
                         <Row>
                               <Card>
-                                  <InputScrollBox importedModel     = {modelLogic.model}  setImportModel = {modelLogic.setPersistedSessionModel}/> 
+                                  <InputScrollBox importedModel = {modelLogic.model}
+                                                  setImportModel = {modelLogic.setPersistedSessionModel}/> 
                                   <hr></hr>
                                   <ButtonToolbar>
                                   <Button  onClick={getModelTreeRepresentation} variant="secondary" bssize="large" className="mr-10" style={{"marginLeft":"3px"}}>
@@ -91,8 +113,7 @@ export const Home = () => {
                         </Col>
                         <Col xs sm md lg xl xxl="3">
                             <Sticky>
-                              <Box/>
-                              {/* <InformationSidePanel NodeInformation={nodeInformation}/> */}
+                                <InformationSidePanel NodeInformation={nodeLogic.node}/>
                             </Sticky>
                         </Col>
                       </Row>

@@ -24,16 +24,18 @@ export const Login = () => {
 
      return (
           <div className="page">
-               <h2>Login page</h2>
+               <h2>User Login</h2>
                <div className="inputs">
                     <div className="input">
                          <input value={formData.userName} 
                                 onChange={(e) => setFormData({userName: e.target.value}) } 
+                                placeholder="username"
                                 type="text"/>
                     </div>
                     <div className="input">
                          <input value={formData.password} 
                                 onChange={(e) => setFormData({password: e.target.value}) } 
+                                placeholder="password"
                                 type="password"/>
                     </div>
                     <div className="button">

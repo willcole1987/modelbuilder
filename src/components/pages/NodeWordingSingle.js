@@ -10,7 +10,7 @@ export const NodeWordingSingle = () => {
      const colorstring  = "VeryRed,Red,Gray,Green,VeryGreen";
      const calculatedValueString  = "[no data],[not applicable]";
 
-     const [colorWordingDictionary, setColorWordingDictionary] = useState([{"Color":"VeryRed", "Wording":""},{"Color":"Red", "Wording":""}]);
+     const [colorWordingDictionary, setColorWordingDictionary] = useState(getWordingObjectArray(colorstring,"Color"));
      const [tableHeader, setTableHeader] = useState("Colors")
      const [isShowModal, setIsShowModal] = useState(false);
 

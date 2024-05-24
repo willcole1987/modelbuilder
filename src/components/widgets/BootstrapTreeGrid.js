@@ -1,7 +1,7 @@
 import {Container, Row, Col } from 'react-bootstrap';
 import Node from './Node';
 
-const BootstrapTreeGrid = ({NodeTree}) =>
+const BootstrapTreeGrid = ({NodeTree, handleNodeInformationGet}) =>
 {
     const getNodeTreeElementsByLevel = (NodeTree, Level) => (NodeTree.filter(x => x["Level"] === Level))
     const getSubsignalGrandParentId = (Subsignal, NodeTree) => (NodeTree.filter( SuccessFactor => SuccessFactor["Level"] === 2 
@@ -48,7 +48,12 @@ const BootstrapTreeGrid = ({NodeTree}) =>
                       
                         <Row >
                             <li key={idx}>
-                                <Node  Key={idx} Name={sf["Name"]} Height={SuccessFactorHeights[sf["Id"]]} />
+                                <Node  Key={idx} 
+                                       Name={sf["Name"]} 
+                                       NodeStructureId={sf.Id} 
+                                       NodeId={sf.NodeId}
+                                       Height={SuccessFactorHeights[sf["Id"]]} 
+                                       handleGetNodeInformation={handleNodeInformationGet}/>
                             </li>
                         </Row>
                 ))}
@@ -63,7 +68,12 @@ const BootstrapTreeGrid = ({NodeTree}) =>
                     .map((sig, idx) => (
                             <Row >
                               <li key={idx}>
-                                  <Node Key={idx} Name={sig["Name"]} Height={SignalHeights[sig["Id"]]}/>
+                                  <Node Key={idx} 
+                                        NodeStructureId={sig.Id} 
+                                        NodeId={sig.NodeId} 
+                                        Name={sig["Name"]} 
+                                        Height={SignalHeights[sig["Id"]]}
+                                        handleGetNodeInformation={handleNodeInformationGet}/>
                               </li>
                             </Row>
                       
@@ -78,7 +88,12 @@ const BootstrapTreeGrid = ({NodeTree}) =>
                     .map((subs,idx) => (
                             <Row >
                               <li key={idx}>
-                                  <Node Key={idx} Name={subs["Name"]} Height={SubsignalHeight}/>
+                                  <Node Key={idx} 
+                                        NodeStructureId={subs.Id} 
+                                        NodeId={subs.NodeId} 
+                                        Name={subs["Name"]} 
+                                        Height={SubsignalHeight}
+                                        handleGetNodeInformation={handleNodeInformationGet}/>
                               </li>
                             </Row>
                     ))
